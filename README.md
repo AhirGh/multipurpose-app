@@ -6,29 +6,29 @@ A PyQt5-based desktop application that combines three essential utilities in one
 ![Python](https://img.shields.io/badge/python-3.7+-green)
 ![PyQt5](https://img.shields.io/badge/PyQt5-5.15+-orange)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Project Structure](#projectstructure)
 - [Configuration](#configuration)
 - [Dependencies](#dependencies)
-- [API Setup](#api-setup)
+- [API Setup](#apisetup)
 - [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
 
-## ✨ Features
+<a id="features"></a>
+## Features 
 
-### 🕐 Digital Clock
+### Digital Clock
 - Real-time digital clock display with 12-hour format
 - Large, easy-to-read LED-style display
 - Updates every second with precise time including AM/PM indicator
 - Custom digital font for authentic LED clock appearance
 
-### ⏱️ Stopwatch
+### Stopwatch
 - High-precision timing (10ms accuracy)
 - Start, Stop, Reset, and Lap functionality
 - Lap recording system with up to 10 saved laps
@@ -36,7 +36,7 @@ A PyQt5-based desktop application that combines three essential utilities in one
 - Scrollable lap list for easy viewing
 - Time format: HH:MM:SS:MS (hours, minutes, seconds, milliseconds)
 
-### 🌦️ Weather Information
+### Weather Information
 - Real-time weather data from OpenWeatherMap API
 - Displays comprehensive weather information:
   - Current temperature (in Celsius)
@@ -50,7 +50,7 @@ A PyQt5-based desktop application that combines three essential utilities in one
 - Detailed error handling for network issues
 - Search by city name
 
-### 🎨 UI/UX Features
+### UI/UX Features
 - Modern dark theme with neon accent colors
 - Intuitive navigation between modules
 - Custom fonts for enhanced visual appeal
@@ -58,11 +58,8 @@ A PyQt5-based desktop application that combines three essential utilities in one
 - Hover effects on interactive elements
 - Clean, minimalist interface
 
-## 📸 Screenshots
-
-*The application features a unified dark theme with neon orange (#ff6900) accents for Clock and Stopwatch, and neon green (#00d80b) accents for Weather.*
-
-## 🔧 Installation
+<a id="installation"></a>
+## Installation
 
 ### Prerequisites
 
@@ -123,7 +120,8 @@ self.setWindowIcon(QIcon("path/to/your/icon.png"))
 font_family = obtainfont("path/to/your/font.ttf")
 ```
 
-## 🚀 Usage
+<a id="usage"></a>
+## Usage
 
 ### Running the Application
 
@@ -171,7 +169,8 @@ python weatherApp.py    # Run Weather only
 5. Search for different cities as needed
 6. Click **"Back"** to return to the main menu
 
-## 📁 Project Structure
+<a id="projectstructure"></a>
+## Project Structure
 
 ```
 multipurpose-app/
@@ -259,7 +258,8 @@ All modules share the `obtainfont(path)` function:
 - Returns font family name for styling
 - Fallback to Arial if font loading fails
 
-## ⚙️ Configuration
+<a id="configuration"></a>
+## Configuration
 
 ### Color Scheme Customization
 
@@ -305,7 +305,8 @@ self.timer.start(1000)  # In clockApp.py
 self.timer.start(10)  # In stopwatchApp.py
 ```
 
-## 📦 Dependencies
+<a id="dependencties"></a>
+## Dependencies
 
 ### Required Python Packages
 
@@ -325,7 +326,8 @@ requests >= 2.25.0
 
 - **OpenWeatherMap API**: Free tier allows 60 calls/minute and 1,000,000 calls/month
 
-## 🔑 API Setup
+<a id="apisetup"></a>
+## API Setup
 
 ### Getting Your OpenWeatherMap API Key
 
@@ -360,8 +362,8 @@ set OPENWEATHER_API_KEY=your_api_key_here
 # Linux/Mac
 export OPENWEATHER_API_KEY=your_api_key_here
 ```
-
-## 🎨 Customization
+<a id="customisation"></a>
+## Customization
 
 ### Adding New Modules
 
@@ -430,7 +432,8 @@ Weather ID ranges:
 - 800: Clear sky
 - 801-804: Clouds
 
-## 🔍 Troubleshooting
+<a id="troubleshooting"></a>
+## Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -526,11 +529,12 @@ def getWeather(self):
     # ... rest of method
 ```
 
+<a id="license"></a>
 ## 📄 License
 
 This project is provided as-is for educational and personal use.
 
-## 🤝 Contributing
+## Contributing
 
 Suggestions for improvements:
 - Add timer/countdown functionality
@@ -542,7 +546,7 @@ Suggestions for improvements:
 - Add unit conversion tools
 - Implement calendar view
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Potential features for future versions:
 - Settings panel for customization
@@ -554,14 +558,14 @@ Potential features for future versions:
 - Weather alerts and notifications
 - Historical weather data graphs
 
-## 📞 Support
+## Support
 
 For issues, questions, or feature requests:
 - Check the Troubleshooting section above
 - Review PyQt5 documentation: https://www.riverbankcomputing.com/static/Docs/PyQt5/
 - OpenWeatherMap API docs: https://openweathermap.org/api
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **PyQt5**: For the powerful GUI framework
 - **OpenWeatherMap**: For providing free weather API access
