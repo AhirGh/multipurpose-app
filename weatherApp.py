@@ -136,7 +136,7 @@ class Weather(QWidget):
         self.symbLabel.setText("⏳")
 
         #apikey for making requests
-        apiKey = "762e1262dc5871cd1770fd7af4c96153"
+        apiKey = "YOUR_API_KEY_HERE"
 
         #crafting url to make requests
         url = f"https://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={apiKey}"
@@ -243,4 +243,5 @@ def main():
     sys.exit(app.exec_())
 
 if __name__ == "__main__":
+
     main()
